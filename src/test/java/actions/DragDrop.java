@@ -27,7 +27,7 @@ public class DragDrop {
 	  action.dragAndDropBy(slider, 100, 0).build().perform();
 	  
 	  driver.switchTo().defaultContent();
-	  system.out.println("Lrishi commited");
+	  System.out.println("Lrishi commited");
 	  
 	  driver.findElement(By.linkText("Development")).click();
   }

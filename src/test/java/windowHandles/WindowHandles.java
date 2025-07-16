@@ -14,6 +14,7 @@ public class WindowHandles {
   public void f() {
 	  
 	  driver = new ChromeDriver();	  
+	  
 	  driver.get("https://www.costmasters.in/");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -41,6 +42,7 @@ public class WindowHandles {
 	  driver.switchTo().window(OriganlWindow);
       String OrgWindowTitle = driver.getTitle();
 	  System.out.println(OrgWindowTitle);
+	  driver.close();
 	  
 	  
   }
